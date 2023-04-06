@@ -14,8 +14,12 @@ body {
 }
 
 h1{
-text-align: center;
-padding-top: 30px;
+position: absolute;
+justify-content: center;
+top: 40%;
+left: 43%;
+
+
 
 }
 .topnav {
@@ -110,168 +114,7 @@ input[type=submit]:hover {
   font-family: Open Sans;
 }
 
-section{
-height: 35vh;
-}
-.footer-distributed{
-  background: #00A2FF;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: bold 16px sans-serif;
-  padding: 55px 50px;
- 
-}
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-  display: inline-block;
-  vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-  width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-  color:  #ffffff;
-  font: normal 36px 'Open Sans', cursive;
-  margin: 0;
-}
-
-.footer-distributed h3 span{
-  color:  lightgreen;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-  color:  #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer-distributed .footer-links a{
-  display:inline-block;
-  line-height: 1.8;
-  font-weight:400;
-  text-decoration: none;
-  color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-  color:  #222;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-  width: 35%;
-}
-
-.footer-distributed .footer-center i{
-  background-color:  #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-  display: inline-block;
-  color: #ffffff;
-  font-weight:400;
-  vertical-align: middle;
-  margin:0;
-}
-
-.footer-distributed .footer-center p span{
-  display:block;
-  font-weight: normal;
-  font-size:14px;
-  line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-  color: black;
-  text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: black;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-  width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-  line-height: 20px;
-  color:  black;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-  display: block;
-  color:  #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-  margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color:  #33383b;
-  border-radius: 2px;
-
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
 h2{
    font-size: 2.3em;
    font-weight: bold;
@@ -291,6 +134,21 @@ h2{
 .my-form .btn{
    background-color: #4BB44E;
 
+}
+p{
+ position: absolute;
+ top: 50%;
+ width: 100%;
+ justify-content: center;
+ text-align: center;
+ font-weight: 500;
+ 
+ 
+}
+.getstarted button {
+position: absolute;
+top: 60%;
+left: 45%;
 }
 </style>
 <meta charset="utf-8">
@@ -321,9 +179,9 @@ h2{
   <div class="hero-section">
   <div class="hero-text">
     <h1 style="font-size:30px">Training Course</h1>
-    <p style="text-align: center; padding-bottom: 30px;"><b>We are providing different training courses that you can freely explore and select. <br>                                                                                           
-       For early birds,we have morning courses which starts <br> from 6am to 8 am with affordable price,<br> evening session and many more.</b></p>
-    <center><a href="<%= request.getContextPath() %>/new"  class="btn-get-started scrollto"><button>Get Started</button></a></center>
+    <p>We are providing different training courses that you can freely explore and select.                                                                                         
+       <br /> For early birds,we have morning courses which starts from 6am to 8 am with affordable price,evening session and many more.</p>
+    <center><a href="<%= request.getContextPath() %>/new"  class="btn-get-started scrollto"> <div class="getstarted"><button>Get Started</button></a></center></div>
   </div>
 </div>
 <div class="container">
@@ -354,77 +212,7 @@ h2{
   </div>
   </div></div></div>
        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-</div>
-</div>
- </div>
-  <!-- Footer -->
-  <section></section>
-<footer class="footer-distributed">
-
-      <div class="footer-left">
-
-        <h3>Training Department<span>Company</span></h3>
-
-        <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
-        
-          <a href="#">About</a>
-          
-          <a href="#">Faq</a>
-          
-          <a href="#">Contact</a>
-        </p>
-
-        <p class="footer-company-name">Training Department © 2015</p>
-      </div>
-
-      <div class="footer-center">
-
-        <div>
-          <i></i>
-          <p><span></span> </p>
-        </div>
-
-        <div>
-          <i></i>
-          <p></p>
-        </div>
-
-        <div>
-          <i></i>
-          <p><a></a></p>
-        </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p class="footer-company-about">
-          <span>About the company</span>
-           We are providing training courses for those who want to try something new and different and to improve your skills in life.
-        </p>
-
-        <div class="footer-icons">
-
-          <a href="https://www.facebook.com/home.php?ref=homescreenpwa"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/"><i class="fa fa-github"></i></a>
-
-        </div>
-
-      </div>
-
-    </footer>
+       
  
 </body>
 
